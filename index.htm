@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-<title>fylo-landing-page</title>
-<style>
-   .top{
+<head>
+ <title>fylo-landing-page</title>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <style>
+    :root {
+  --primary-padding: 30px;
+  --primary-color: hsl(243, 87%, 12%)
+    }
+    header{
     display: flex;
      justify-content: space-between;
      margin-top: 60px;
-     margin-bottom: 50px;
-    }
-   #top-list, li{
-    list-style-type: none;
+     margin-bottom: 50px; 
+ }
+    nav{
     display: flex;
     justify-content: right;
     margin-left: 70px;
-   }
-   .second{
+     }
+   .hero{
     display: flex;
    }
-   #form{
+   .hero, h1{
+    color:var(--primary-color)
+   }
+   form{
     display: flex;
-    margin-right: 15px;
+    gap: 5px;
    }
    #link{
     display: flex;
    }
-   #white-card{
+   article{
     background-color: white;
     width: 298px;
     height: 150px;
@@ -44,50 +53,49 @@
     margin-right: -95px;
     padding-left: 5px;
    }
+ </style>
+</head>
 
-</style>
-    </head>
-
-    <body>
-<!-- Get early access today It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you. Get Started For Free Phone: +1-543-123-4567 example@fylo.com About Us Jobs Press Blog Contact Us Terms Privacy-->
-<div class="top">
+<body>
+ <!-- Get early access today It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you. Get Started For Free Phone: +1-543-123-4567 example@fylo.com About Us Jobs Press Blog Contact Us Terms Privacy-->
+ <header>
     <img src="images/logo.svg" alt="logo" id="logo" style="width: 160px; height: 40px; margin-left: 30px; margin-right: 150px;">
-    <ul id="top-list">
-        <li>Features</li>
-        <li>Team</li>
-        <li style="margin-right: 30px">Sign In</li>
-    </ul>
-</div>
+    <nav>
+        <p>Features</p>
+        <p>Team</p>
+        <p>style="margin-right: 30px">Sign In</p>
+    </nav>
+</header>
 
-<div class="second">
-    <div id="text">
-        <br><br><br>
-<h1><strong>All your files in one secure location, accessible anywhere.</strong></h1> 
-<strong><p>Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</p></strong>
-<div id="form">
-<form>
-<input type="email" id="email" name="email" placeholder="Enter your email..."
-style="height: 40px; width: 270px; padding-left:30px;">
-    </form>
+ <section class="hero">
+  <div>
+    <br><br><br>
+    <h1><strong>All your files in one secure location, accessible anywhere.</strong></h1> 
+    <p><strong>Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</strong></p>
+
+  <form>
+    <input type="email" id="email" name="email" placeholder="Enter your email..."
+         style="height: 40px; width: 270px; padding-left:30px;">
     <button style="margin-left: 15px; height: 45px; width: 180px; color: white; border: 1px, solid, blue; border-radius: 2px; background-color: blue;"><strong> Get Started</strong></button>
-    </div>
-    </div>
-    <img src="images/illustration-1.svg" alt="Illustration-1" id="Illustration-1" style="width: 800px; height: 500px">
-</div>
+  </form>
+  </div>
+
+  <img src="images/illustration-1.svg" alt="Illustration-1" id="Illustration-1" style="width: 800px; height: 500px">
+</section>
 
 <img src="images/bg-curve-desktop.svg" alt="curve" style="margin-right: -30px;">
 
-<div class="third">
-<div id="Third" style="margin-right: 30px;">
- <h1><strong>Stay productive, wherever you are</strong></h1>
- <p>Never let location be an issue when accessing your files. Fylo have you covered for all of your file storage needs.</p>
- <P> Securely share files and folders with friends, family and colleagues for live collabortion. No email attachments required!</P>
- <div id="link">
- <a href="https://www.fylo.com" style="color: rgba(0, 128, 96, 0.678); padding-left: 3px;"><strong>See how fylo works</strong></a>
- <img src="/images/icon-arrow.svg" alt="arrow">
- </div>
-<br><br>
-    <div id="white-card">
+<section class="third">
+ <div style="margin-right: 30px;">
+   <h1><strong>Stay productive, wherever you are</strong></h1>
+   <p>Never let location be an issue when accessing your files. Fylo have you covered for all of your file storage needs.</p>
+   <P> Securely share files and folders with friends, family and colleagues for live collabortion. No email attachments required!</P>
+   <div id="link">
+     <a href="https://www.fylo.com" style="color: rgba(0, 128, 96, 0.678); padding-left: 3px;"><strong>See how fylo works</strong></a>
+    <img src="/images/icon-arrow.svg" alt="arrow">
+   </div>
+   <br><br>
+   <article>
       <img src="images/icon-quotes.svg" alt="quote">
       <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
       <div id="ceo">
@@ -97,13 +105,13 @@ style="height: 40px; width: 270px; padding-left:30px;">
             <small>Founder & CEO, Hurdle.</small>
         </pre>
       </div>
-    </div>
-</div>
+    </article>
+ </div>
 
-<div id="the-image">
+ <div>
     <img src="images/illustration-2.svg" style="width: 500px; height: 450px; margin-right: 70px;">
-</div>
-</div>
+ </div> 
+</section>
 
 </body>
 </html>
