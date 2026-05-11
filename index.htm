@@ -6,30 +6,62 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
  <style>
-    :root {
-  --primary-padding: 30px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+  }   
+:root {
+  --primary-padding: 40px;
   --primary-color: hsl(243, 87%, 12%)
     }
-    header{
+
+    header{  
     display: flex;
-     justify-content: space-between;
-     margin-top: 60px;
-     margin-bottom: 50px; 
- }
+    justify-content: space-between;
+    padding: var(--primary-padding);
+    }
+
     nav{
     display: flex;
-    justify-content: right;
-    margin-left: 70px;
-     }
-   .hero{
+    gap: 50px;
+    }
+
+   .hero div{
     display: flex;
+    flex-direction: column;
+    gap: 17px;
+    flex: 1;
    }
-   .hero, h1{
+   .hero-div, h1{
     color:var(--primary-color)
    }
-   form{
+   .hero{
     display: flex;
-    gap: 5px;
+    padding: 15px;
+   }
+   .hero img {
+    width: 50%;
+    flex: 1;
+    }
+   .hero, form{
+    display: flex;
+    gap: 20px;
+   }
+   .bg-curve{
+    width: 100%;
+    display: block;
+   }
+
+   section{
+    background-color: hsl(260, 85%, 98%);
+    display: flex;
+    padding: var(--primary-padding);
+    /*margin-top: -4px;
+    margin-left: -7px;
+    margin-right: -95px;
+    padding-left: 5px;*/
+    gap: 40px;
    }
    #link{
     display: flex;
@@ -38,60 +70,74 @@
     background-color: white;
     width: 298px;
     height: 150px;
-    padding-left: 20px;
-    padding-top: 17px;
-    padding-bottom: 16px;
+    padding: 20px;
    }
    #ceo{
     display: flex;
    }
-   .third{
-    background-color:  hsl(260, 85%, 98%);
-    display: flex;
-    margin-top: -4px;
-    margin-left: -7px;
-    margin-right: -95px;
-    padding-left: 5px;
+   .illustration-2{
+    width: 100%;
+    height: 85%;
    }
- </style>
+
+   .fourth{
+    color: white;
+    padding: var(--primary-padding);
+    background-color:  hsl(238, 22%, 44%);
+    display: flex;
+    font-size: small;
+    gap: 50px;
+    height: 150px;
+   }
+   .fourth-form{
+    display: flex;
+    flex-direction: column;
+   }
+   footer{
+    background-color: var(--primary-color);
+    padding: var(--primary-padding);
+    color: white;
+   }
+   .last{
+    display: flex;
+    gap: 50px;
+   }
+
+ </style
 </head>
 
 <body>
- <!-- Get early access today It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you. Get Started For Free Phone: +1-543-123-4567 example@fylo.com About Us Jobs Press Blog Contact Us Terms Privacy-->
  <header>
-    <img src="images/logo.svg" alt="logo" id="logo" style="width: 160px; height: 40px; margin-left: 30px; margin-right: 150px;">
-    <nav>
+    <img src="images/logo.svg" alt="logo" style="width: 150px; height: 40px;">
+    <nav>  
         <p>Features</p>
         <p>Team</p>
-        <p>style="margin-right: 30px">Sign In</p>
+        <p>Sign In</p>
     </nav>
-</header>
+ </header>
 
- <section class="hero">
-  <div>
-    <br><br><br>
+<div class="hero">
+  <div class="hero div">
     <h1><strong>All your files in one secure location, accessible anywhere.</strong></h1> 
     <p><strong>Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</strong></p>
-
-  <form>
-    <input type="email" id="email" name="email" placeholder="Enter your email..."
-         style="height: 40px; width: 270px; padding-left:30px;">
-    <button style="margin-left: 15px; height: 45px; width: 180px; color: white; border: 1px, solid, blue; border-radius: 2px; background-color: blue;"><strong> Get Started</strong></button>
-  </form>
+    <form>
+        <input type="email" id="email" name="email" placeholder="Enter your email..." style="padding: 10px">
+        <button style="padding: 10px; color: white; border: 1px, solid, blue; border-radius: 3px; background-color: hsl(224, 93%, 58%)"><strong>Get Started</strong></button>
+    </form>   
   </div>
+  <img src="images/illustration-1.svg" alt="Illustration-1">
+</div>   
 
-  <img src="images/illustration-1.svg" alt="Illustration-1" id="Illustration-1" style="width: 800px; height: 500px">
-</section>
 
-<img src="images/bg-curve-desktop.svg" alt="curve" style="margin-right: -30px;">
+<img src="images/bg-curve-desktop.svg" alt="curve" class="bg-curve">
 
 <section class="third">
- <div style="margin-right: 30px;">
+ <div style="width: 100%">
    <h1><strong>Stay productive, wherever you are</strong></h1>
    <p>Never let location be an issue when accessing your files. Fylo have you covered for all of your file storage needs.</p>
    <P> Securely share files and folders with friends, family and colleagues for live collabortion. No email attachments required!</P>
    <div id="link">
-     <a href="https://www.fylo.com" style="color: rgba(0, 128, 96, 0.678); padding-left: 3px;"><strong>See how fylo works</strong></a>
+     <a href="https://www.fylo.com" style="color: hsl(170, 45%, 43%);;"><strong>See how fylo works</strong></a>
     <img src="/images/icon-arrow.svg" alt="arrow">
    </div>
    <br><br>
@@ -108,10 +154,43 @@
     </article>
  </div>
 
- <div>
-    <img src="images/illustration-2.svg" style="width: 500px; height: 450px; margin-right: 70px;">
- </div> 
+ <figure>
+    <img src="images/illustration-2.svg" class="illustration-2">
+ </figure>
 </section>
+
+<div class="fourth">
+  <div>
+     <h1 style="color: white">Get early access today</h1>
+     <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any question, our support team will be happy to help you.</p>
+  </div>
+  <form class="fourth-form">
+    <input type="email" placeholder="email@example.com">
+    <pre><button style="color: white; border: 1px, solid, blue; border-radius: 3px; background-color: hsl(224, 93%, 58%)"><strong>Get started for free</strong></button></pre>
+  </form>
+</div>
+
+<footer>
+  <img src="images/logo.svg" alt="logo" style="width: 150px; height: 40px">
+<div class="last">
+  <div>
+  <p><img src="images/icon-phone.svg"> Phone: +1-543-123-4567</p>
+  <p><img src="images/icon-email.svg"> example@fylo.com</p>
+  </div>
+  <pre>
+    About Us 
+    Jobs
+    Press 
+    Blog 
+  </pre>
+  <pre>
+    Contact Us
+    Terms
+    Privacy
+  </pre>
+  </div>
+</div>
+</footer>
 
 </body>
 </html>
