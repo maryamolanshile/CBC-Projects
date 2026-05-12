@@ -4,6 +4,7 @@
  <title>fylo-landing-page</title>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <script src="https://cdn.tailwindcss.com"></script>
 
  <style>
 * {
@@ -27,23 +28,14 @@
     gap: 50px;
     }
 
-   .hero div{
-    display: flex;
-    flex-direction: column;
-    gap: 17px;
-    flex: 1;
-   }
    .hero-div, h1{
     color:var(--primary-color)
    }
-   .hero{
-    display: flex;
-    padding: 15px;
-   }
-   .hero img {
+
+   /* .hero img {
     width: 50%;
     flex: 1;
-    }
+    } */
    .hero, form{
     display: flex;
     gap: 20px;
@@ -102,13 +94,19 @@
     display: flex;
     gap: 50px;
    }
+  .hero-button{
+    background-color: hsl(224, 93%, 58%);
+  }
+  .styled-hero-button{
+    background-color: green;
+  }
 
  </style
 </head>
 
 <body>
  <header>
-    <img src="images/logo.svg" alt="logo" style="width: 150px; height: 40px;">
+    <img  src="images/logo.svg" class="w-32 h-10" alt="logo" >
     <nav>  
         <p>Features</p>
         <p>Team</p>
@@ -116,23 +114,24 @@
     </nav>
  </header>
 
-<div class="hero">
-  <div class="hero div">
+<div class="hero flex p-4">
+  <div class="flex flex-col gap-4 flex-1 ">
     <h1><strong>All your files in one secure location, accessible anywhere.</strong></h1> 
     <p><strong>Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</strong></p>
     <form>
         <input type="email" id="email" name="email" placeholder="Enter your email..." style="padding: 10px">
-        <button style="padding: 10px; color: white; border: 1px, solid, blue; border-radius: 3px; background-color: hsl(224, 93%, 58%)"><strong>Get Started</strong></button>
+        <button class="hero-button"  style="padding: 10px; color: white; border: 1px, solid, blue; border-radius: 3px; "><strong>Get Started</strong></button>
+        <button class="hero-button bg-green-600" style="padding: 10px; color: white; border: 1px, solid, "><strong>Get Started</strong></button>
     </form>   
   </div>
-  <img src="images/illustration-1.svg" alt="Illustration-1">
+  <img class="w-1/2 flex-1" src="images/illustration-1.svg" alt="Illustration-1">
 </div>   
 
 
 <img src="images/bg-curve-desktop.svg" alt="curve" class="bg-curve">
 
 <section class="third">
- <div style="width: 100%">
+ <div class="w-full">
    <h1><strong>Stay productive, wherever you are</strong></h1>
    <p>Never let location be an issue when accessing your files. Fylo have you covered for all of your file storage needs.</p>
    <P> Securely share files and folders with friends, family and colleagues for live collabortion. No email attachments required!</P>
