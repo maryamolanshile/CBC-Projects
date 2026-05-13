@@ -4,6 +4,7 @@
  <title>fylo-landing-page</title>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!--<script src="https://cdn.tailwindcss.com"></script> -->
 
  <style>
 * {
@@ -31,15 +32,15 @@
    .hero div{
     display: flex;
     flex-direction: column;
-    gap: 17px;
-    flex: 1;
+    gap: 15px;
    }
+
    .hero-div, h1{
     color:var(--primary-color)
    }
    .hero{
     display: flex;
-    padding: 15px;
+    padding: 30px;
     width: 100%;
    }
    .hero img {
@@ -66,14 +67,20 @@
     gap: 40px;
     width: 100%;
    }
+   .third{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+   }
    #link{
     display: flex;
    }
    article{
     background-color: white;
     width: 298px;
-    height: 150px;
+    height: 170px;
     padding: 20px;
+    margin-top: 5px;
    }
    #ceo{
     display: flex;
@@ -89,9 +96,11 @@
     background-color:  hsl(238, 22%, 44%);
     display: flex;
     font-size: small;
-    gap: 50px;
-    height: 150px;
+    justify-content: space-between;
     width: 100%;
+   }
+   .fourth-div{
+    width: 320px;
    }
    .fourth-form{
     display: flex;
@@ -111,13 +120,36 @@
    #svg{
     color: white 
    }
-
+   @media (max-width: 320px){
+    .hero{
+        flex-direction: column;
+        flex-direction: reverse;
+    }
+    .hero, form{
+      flex-direction: column;
+    }
+    section{
+      flex-direction: column;
+      flex-direction: reverse;
+    }
+    .fourth{
+      flex-direction: column;
+    }
+    .fourth-form{
+      flex-direction: column;
+    }
+    footer{
+      flex-direction: column;
+      flex-direction: reverse;
+    }
+    }
+   
  </style
 </head>
 
 <body>
  <header>
-    <img src="images/logo.svg" alt="logo" style="width: 150px; height: 40px;">
+    <img  src="images/logo.svg" style="width: 150px; height: 40px;" alt="logo" >
     <nav>  
         <p>Features</p>
         <p>Team</p>
@@ -126,22 +158,22 @@
  </header>
 
 <div class="hero">
-  <div class="hero div">
+  <div class="hero-div">
     <h1><strong>All your files in one secure location, accessible anywhere.</strong></h1> 
     <p><strong>Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</strong></p>
     <form>
         <input type="email" id="email" name="email" placeholder="Enter your email..." style="padding: 10px">
-        <button style="padding: 10px; color: white; border: 1px, solid, blue; border-radius: 3px; background-color: hsl(224, 93%, 58%)"><strong>Get Started</strong></button>
-    </form>   
+        <button style="background-color: blue; padding: 10px; color: white; border: 1px, solid, blue; border-radius: 3px; "><strong>Get Started</strong></button>
+    </form>    
   </div>
-  <img src="images/illustration-1.svg" alt="Illustration-1">
+  <img class="hero img" src="images/illustration-1.svg" alt="Illustration-1">
 </div>   
 
 
 <img src="images/bg-curve-desktop.svg" alt="curve" class="bg-curve">
 
-<section class="third">
- <div style="width: 100%">
+<section>
+ <div class="third">
    <h1><strong>Stay productive, wherever you are</strong></h1>
    <p>Never let location be an issue when accessing your files. Fylo have you covered for all of your file storage needs.</p>
    <P> Securely share files and folders with friends, family and colleagues for live collabortion. No email attachments required!</P>
@@ -149,7 +181,7 @@
      <a href="https://www.fylo.com" style="color: hsl(170, 45%, 43%);;"><strong>See how fylo works</strong></a>
     <img src="/images/icon-arrow.svg" alt="arrow">
    </div>
-   <br><br>
+   
    <article>
       <img src="images/icon-quotes.svg" alt="quote">
       <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
@@ -169,13 +201,13 @@
 </section>
 
 <div class="fourth">
-  <div>
+  <div class="fourth-div">
      <h1 style="color: white">Get early access today</h1>
      <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any question, our support team will be happy to help you.</p>
   </div>
   <form class="fourth-form">
-    <input type="email" placeholder="email@example.com">
-    <pre><button style="color: white; border: 1px, solid, blue; border-radius: 3px; background-color: hsl(224, 93%, 58%)"><strong>Get started for free</strong></button></pre>
+    <input type="email" placeholder="email@example.com" style="height: 25px; width: 250px">
+    <pre><button style="color: white; height: 25px; width: 140px; border: 1px, solid, blue; border-radius: 3px; background-color: hsl(224, 93%, 58%)"><strong>Get started for free</strong></button></pre>
   </form>
 </div>
 
