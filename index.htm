@@ -20,6 +20,7 @@
     display: flex;
     justify-content: space-between;
     padding: var(--primary-padding);
+    width: 100%;
     }
 
     nav{
@@ -39,6 +40,7 @@
    .hero{
     display: flex;
     padding: 15px;
+    width: 100%;
    }
    .hero img {
     width: 50%;
@@ -62,6 +64,7 @@
     margin-right: -95px;
     padding-left: 5px;*/
     gap: 40px;
+    width: 100%;
    }
    #link{
     display: flex;
@@ -88,6 +91,7 @@
     font-size: small;
     gap: 50px;
     height: 150px;
+    width: 100%;
    }
    .fourth-form{
     display: flex;
@@ -97,10 +101,15 @@
     background-color: var(--primary-color);
     padding: var(--primary-padding);
     color: white;
+    font-size: small;
+    width: 100%;
    }
    .last{
     display: flex;
-    gap: 50px;
+    gap: 210px;
+   }
+   #svg{
+    color: white 
    }
 
  </style
@@ -171,7 +180,7 @@
 </div>
 
 <footer>
-  <img src="images/logo.svg" alt="logo" style="width: 150px; height: 40px">
+  <img src="images/logo.svg" id="svg" alt="logo" style="color: white; width: 150px; height: 40px">
 <div class="last">
   <div>
   <p><img src="images/icon-phone.svg"> Phone: +1-543-123-4567</p>
@@ -187,6 +196,11 @@
     Contact Us
     Terms
     Privacy
+  </pre>
+  <pre>
+    <img src="images/icon-facebook.svg" alt="facebook">
+    <img src="images/icon-twitter.svg" alt="twitter">
+    <img src="images/icon-instagram.svg" alt="instagram">
   </pre>
   </div>
 </div>
