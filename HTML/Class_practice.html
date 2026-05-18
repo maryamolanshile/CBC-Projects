@@ -1,0 +1,139 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class practice.html</title>
+    <link rel="stylesheet" href="CSS/Class_practice.css">
+</head>
+<body>
+   <h1>HTML PRACTICE</h1>
+  <h4>BLOCK ELEMENTS</h4>
+   <div>This is a <b>div</b> block. It is a block element that serve as a container for all other elements. It looks ordinary in the outcome but can be used with some attributes to mark up semantics common to a group of consecutive elements.<br>
+    <p>This a paragraph block inside the div block. The <strong>P</strong> element represents a paragraph and can contain another element that want to appear as a paragraph.<br>
+      <h5>THE UL ELEMENT</h5><span>
+      <ul>
+         The Ul element is used to represent a list of items where the order of items is not important. The items will be ordered with bullets point and not numbers.<br>
+         <li>This is a list element</li>
+         <li>It is used as block element in the UL & OL element</li>
+         <li>This is a UL</li>
+      </ul>
+      </span>
+      <h5>THE OL ELEMENT</h5>
+      <ol>
+         There's also the ordered list, where the listed is numbered in order.<br>
+          <li>This is a numbered list </li>
+          <li>It is also a block element</li>
+          <li>This is a OL</li>
+      </ol>   
+      <br>
+      <P>NB: All the elements above are all block level element. They automatically start a new line when used. Some other block level elements include; The header, footer, section, form, and the taable tag. </P>
+       
+<h4>INLINE ELEMENTS</h4>
+<ul>
+ <p>Inline elements thst stay on the same horizontal line with other elements, they do not begin a new line when used. Some example of inline element are:
+ <li>There's the span element, <span>it is used to mark a part of a page while still joining it together with the rest of the page. The marked part can be referred to in some other part of the page while styling.</span></li>
+ <li>The anchor tag which is used in creating hyperlinks when used with <b>href</b>.<a href="https://www.latechify.org">Visit latechify website</a> </li>
+ <li>The strong element which is use to bolden important text. e.g<strong>Strong</strong></li>
+ <li>The em element is used to emphasize text by italicising it e.g<em>Emphasize.</em></li>
+ <li>The u element is used to underline e.g <u>Underline</u></li>
+ <li>The small element is used to scrutinize the size of a text e.g<small>This is a small print.</small></li>
+ <li>The abbr element is use to represent the abbrievations andis used with the title attribute to show the full meaning of the abbrievation when the cursor hovers on it.<abbr title="Hyper Text Markup Language">HTML</abbr></li>
+ <li>The img element is a self closing element and is used to display images. For example:<img src="cat.png" alt="A cute cat" width="200" height="150"></li>
+ </p>
+ </ul>
+ <p><strong>NB: All the above elements are Inline element and are meant to be on the same horizontal line. But because I embedded them in a UL tag which isa block element, they appear as a list instead. <strong></p>
+<h4>HTML ATTRIBUTES  </h4>
+<h4>Form Element and it's Attributes</h4>
+ <form>
+
+</p>Radio<br>
+ <input type="radio" id="html" name="fav_language" value="HTML" />
+ <label for="html">HTML</label><br>
+
+ <input type="radio" id="css" name="fav_language" value="CSS" />
+ <label for="css">CSS</label><br>
+
+  <input type="radio" id="java" name="fav_language" value="JAVA" />
+ <label for="java">JAVA</label><br>
+
+</p>Check box<br>
+ <input type="checkbox" id="vehicle" name="vehicle" value="boat" />
+ <label for="vehicle">I have a boat</label><br>
+
+ <input type="checkbox" id="vehicle" name="vehicle" value="bike" />
+ <label for="vehicle">I have a bike</label><br>
+
+  <input type="checkbox" id="vehicle" name="vehicle" value="car" />
+ <label for="vehicle">I have a car</label><br>
+
+  <p>Date<br>
+    <label for="birthday">Birthday: </label><br>
+  <input type="date" name="birthday"><br>
+
+  <label for="birthday">Birthday: </label><br>
+  <input type="month" name="birthday"><br>
+
+  <p>File<br>
+     <label for="my file" >Select a file</label><br>
+   <input type="file" name="my file"<br>
+   </p>
+
+   <p>
+    Quantity<br>
+    <label for="quantity">Quantity: </label>
+    <input type="number" name="quantity" min="0" max="20" step="2"><br> 
+ </p>
+ <p>Range<br>
+    <label for="vol">Volume (between 0 and 50)</label>
+    <input type="range" name="Volume" min="0" max="50"><br>
+ </p>
+ <P>
+    <label for="time">Time</label>
+    <input type="time" name="Name"><br >
+ </P>
+</form>
+
+<p>BIO-GRAPH</p>
+<h4 id="assignment">
+NAME: MARYAM ISMAEEL<br><br>
+EMAIL: ismaeelmaryam11@gmail.com<br><br>
+SCHOOL: SUMMIT UNIVERSITY<br><br>
+LEVEL: 200 LVL<br><br>
+</h4>
+<br><br>
+<h4 id="ls">List Styling</h4>
+<ul class="U.list">
+   Un-ordered List.
+   <li>List Item 1</li>
+   <li>List Item 2</li>
+   <li>List Item 3</li>
+</ul>   
+
+<ol class="O.list">
+   Ordered List.
+   <li>List Item 1</li>
+   <li>List Item 2</li>
+   <li>List Item 3</li>
+</ol>  
+
+<ol></ol>
+<br><br><br><br><br><br><br><br><br>
+
+<div class="container">
+<ul id="menu">
+   <li class="list ">Home</li>
+   <li class="list">About</li>
+   <li class="list">Service</li>
+   <li class="list">Pricing</li>
+   <li class="list">Contact </li>
+</ul></div>
+
+<h2 id="ts">TEXT STYLING</h2>
+<P>This is a paragraph</P>
+
+<a href='#'>This is a link</a>
+
+<br><br><br><br><br>
+</body>
+</html>
