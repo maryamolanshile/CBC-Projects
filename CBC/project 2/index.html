@@ -7,72 +7,84 @@
      <script src="https://cdn.tailwindcss.com"></script>
     
 </head>
-<body class="bg-rose-50 p-16">
+<body class="bg-rose-50 p-16 flex w-full gap-x-4">
     <!-- Desserts Waffle with Berries Waffle 6.50 Add to Cart Vanilla Bean Crème Brûlée Crème Brûlée 7.00 Add to Cart Macaron Mix of Five Macaron 8.00 Add to Cart Classic Tiramisu Tiramisu 5.50 Add to Cart Pistachio Baklava Baklava 4.00 Add to Cart Lemon Meringue Pie Pie 5.00 Add to Cart Red Velvet Cake Cake 4.50 Add to Cart Salted Caramel Brownie Brownie 4.50 Add to Cart Vanilla Panna Cotta Panna Cotta 6.50 Add to Cart Your Cart () Your added items will appear here
     -->
- <div class="grid">
+ <div class="grid w-4/5">
     <h2 class="font-extrabold text-3xl pb-4">Desserts</h2>
     <div class="flex gap-x-4">
         <div>
-         <img src="assets/images/image-waffle-desktop.jpg" class="w-48 rounded-lg relative">     
-        <div>
-         <img src="assets/images/icon-add-to-cart.svg" class="bg-white flex rounded-lg w-32 shadow md">
-            Add to cart
-         </div>
-         <p class="text-sm text-gray-600">Waffle</p>
+          <div class="relative pb-4 cart-container">
+           <img src="assets/images/image-waffle-desktop.jpg" class="w-48 rounded-lg image">     
+           <button class="bg-white flex pl-[15px]  pr-[13px]  w-[130px] rounded-xl shadow-lg text-center absolute bottom-[-3px] left-[30px] p-[1px] add-to-cart">
+             <img src="assets/images/icon-add-to-cart.svg">
+             Add to cart
+           </button>
+        </div>
+         <p class="text-sm text-gray-600 pt-2">Waffle</p>
          <p class="font-bold text-sm">Waffle with berries</p>
          <p class="text-orange-500 font-bold text-sm">$6.50</p>
         </div>
         <div>
-         <img src="assets/images/image-creme-brulee-desktop.jpg" class="w-48 rounded-lg relative">
-         <div class="bg-white flex rounded-lg w-32 shadow md">
-            <img src="assets/images/icon-add-to-cart.svg">
-            Add to cart
+         <div class="relative pb-4 cart-container">
+           <img src="assets/images/image-creme-brulee-desktop.jpg" class="w-48 rounded-lg image">
+           <button class="bg-white flex pl-[15px]  pr-[13px]  w-[130px] rounded-xl shadow-lg text-center absolute bottom-[-3px] left-[30px] p-[1px] add-to-cart">
+             <img src="assets/images/icon-add-to-cart.svg">
+             Add to cart
+           </button>
          </div>
-         <p class="text-sm text-gray-600">Crème Brûlée</p>
+         <p class="text-sm text-gray-600 pt-2">Crème Brûlée</p>
          <p class="font-bold text-sm">Vanilla Bean Crème Brûlée</p>
          <p class="text-orange-500 font-bold text-sm">$7.00</p>
         </div>
         <div>
-           <img src="assets/images/image-macaron-desktop.jpg" class="w-48 rounded-lg relative">
-           <div class="bg-white flex rounded-lg w-32 shadow md">
+         <div class="relative pb-4 cart-container">
+           <img src="assets/images/image-macaron-desktop.jpg" class="w-48 rounded-lg image">
+           <button class="bg-white flex pl-[15px] pr-[13px] w-[130px] rounded-xl shadow-lg text-center absolute bottom-[-3px] left-[30px] p-[1px] add-to-cart">
              <img src="assets/images/icon-add-to-cart.svg">
              Add to cart
-           </div>
-           <p class="text-sm text-gray-600">Macaron</p>
-           <p class="font-bold text-sm">Mix of Five Macaron</p>
-           <p class="text-orange-500 font-bold text-sm">$8.00</p>
+           </button>
+         </div>  
+         <p class="text-sm text-gray-600 pt-2">Macaron</p>
+         <p class="font-bold text-sm">Mix of Five Macaron</p>
+         <p class="text-orange-500 font-bold text-sm">$8.00</p>
         </div>
-    </div>
+    </div>  
 
     <div class="flex gap-x-4 pt-4">
         <div>
-           <img src="assets/images/image-tiramisu-desktop.jpg" class="w-48 rounded-lg relative">
-           <div class="bg-white flex rounded-lg w-32 shadow md">
-             <img src="assets/images/icon-add-to-cart.svg">
-             Add to cart
+           <div class="relative pb-4 cart-container">
+             <img src="assets/images/image-tiramisu-desktop.jpg" class="w-48 rounded-lg image">
+             <button class="bg-white flex pl-[15px] pr-[13px] w-[130px] rounded-xl shadow-lg text-center absolute bottom-[-3px] left-[30px] p-[1px] add-to-cart">
+               <img src="assets/images/icon-add-to-cart.svg">
+               Add to cart
+             </button>
            </div>
-           <p class="text-sm text-gray-600">Tiramisu</p>
+           <p class="text-sm text-gray-600 pt-2">Tiramisu</p>
            <p class="font-bold text-sm">Classic Tiramisu</p>
            <p class="text-orange-500 font-bold text-sm">$5.50</p>
         </div>
         <div>
-           <img src="assets/images/image-baklava-desktop.jpg" class="w-48 rounded-lg relative">
-           <div class="bg-white flex rounded-lg w-32 shadow md">
-             <img src="assets/images/icon-add-to-cart.svg">
-             Add to cart
+           <div class="relative pb-4 cart-container">
+             <img src="assets/images/image-baklava-desktop.jpg" class="w-48 rounded-lg image">
+             <button class="bg-white flex pl-[15px] pr-[13px] w-[130px] rounded-xl shadow-lg text-center absolute bottom-[-3px] left-[30px] p-[1px] add-to-cart">
+               <img src="assets/images/icon-add-to-cart.svg">
+               Add to cart
+             </button>
            </div>
-           <p class="text-sm text-gray-600">Baklava</p>
+           <p class="text-sm text-gray-600 pt-2">Baklava</p>
            <p class="font-bold text-sm">Pistachio Baklava</p>
            <p class="text-orange-500 font-bold text-sm">$4.00</p>
         </div>
         <div>
-           <img src="assets/images/image-meringue-desktop.jpg" class="w-48 rounded-lg relative">
-           <div class="bg-white flex rounded-lg w-32 shadow md">
-             <img src="assets/images/icon-add-to-cart.svg">
-             Add to cart
+           <div class="relative pb-4 cart-container">
+             <img src="assets/images/image-meringue-desktop.jpg" class="w-48 rounded-lg image">
+             <button class="bg-white flex pl-[15px] pr-[13px] w-[130px] rounded-xl shadow-lg text-center absolute bottom-[-3px] left-[30px] p-[1px] add-to-cart">
+               <img src="assets/images/icon-add-to-cart.svg">
+               Add to cart
+             </button>
            </div>
-           <p class="text-sm text-gray-600">Pie</p>
+           <p class="text-sm text-gray-600 pt-2">Pie</p>
            <p class="font-bold text-sm">Lemon Meringue Pie</p>
            <p class="text-orange-500 font-bold text-sm">$5.00</p>   
         </div>   
@@ -80,37 +92,51 @@
 
     <div class="flex gap-x-4 pt-4">
         <div>
-           <img src="assets/images/image-cake-desktop.jpg" class="w-48 rounded-lg relative">
-           <div class="bg-white flex rounded-lg w-32 shadow md">
-             <img src="assets/images/icon-add-to-cart.svg">
-             Add to cart
+           <div class="relative pb-4 cart-container">
+             <img src="assets/images/image-cake-desktop.jpg" class="w-48 rounded-lg image">
+             <button class="bg-white flex pl-[15px] pr-[13px] w-[130px] rounded-xl shadow-lg text-center absolute bottom-[-3px] left-[30px] p-[1px] add-to-cart">
+               <img src="assets/images/icon-add-to-cart.svg">
+               Add to cart
+             </button>
            </div>
-           <p class="text-sm text-gray-600">Cake</p>
+           <p class="text-sm text-gray-600 pt-2">Cake</p>
            <p class="font-bold text-sm">Red Velvet Cake</p>
            <p class="text-orange-500 font-bold text-sm">$4.50</p>   
         </div> 
         <div>
-           <img src="assets/images/image-brownie-desktop.jpg" class="w-48 rounded-lg relative">
-           <div class="bg-white flex rounded-lg w-32 shadow md">
-             <img src="assets/images/icon-add-to-cart.svg">
-             Add to cart
+           <div class="relative pb-4 cart-container">
+             <img src="assets/images/image-brownie-desktop.jpg" class="w-48 rounded-lg image">
+             <button class="bg-white flex pl-[15px] pr-[13px] w-[130px] rounded-xl shadow-lg text-center absolute bottom-[-3px] left-[30px] p-[1px] add-to-cart">
+               <img src="assets/images/icon-add-to-cart.svg">
+               Add to cart
+             </button>
            </div>
-           <p class="text-sm text-gray-600">Brownie</p>
+           <p class="text-sm text-gray-600 pt-2">Brownie</p>
            <p class="font-bold text-sm">Salted Caramel Brownie</p>
            <p class="text-orange-500 font-bold text-sm">$4.50</p>   
         </div> 
         <div>
-           <img src="assets/images/image-panna-cotta-desktop.jpg" class="w-48 rounded-lg relative" >
-           <div class="bg-white flex rounded-lg w-32 shadow md">
-             <img src="assets/images/icon-add-to-cart.svg">
-             Add to cart
+           <div class="relative pb-4 cart-container">
+             <img src="assets/images/image-panna-cotta-desktop.jpg" class="w-48 rounded-lg image">
+             <button class="bg-white flex pl-[15px] pr-[13px] w-[130px] rounded-xl shadow-lg text-center absolute bottom-[-3px] left-[30px] p-[1px] add-to-cart">
+               <img src="assets/images/icon-add-to-cart.svg">
+               Add to cart
+             </button>
            </div>
-           <p class="text-sm text-gray-600">Panna Cotta</p>
+           <p class="text-sm text-gray-600 pt-2">Panna Cotta</p>
            <p class="font-bold text-sm">Vanilla Panna Cotta</p>
            <p class="text-orange-500 font-bold text-sm">$6.50</p>   
         </div>  
     </div>
  </div>
 
+ <div class="w-1/3 bg-white h-1/4 rounded-lg shadow p-4">
+    <h2 class="font-bold text-2xl pb-4 text-orange-500">Your Cart (0)</h2>
+    <img src="assets/images/illustration-empty-cart.svg" class="mx-auto">
+    <p class="text-sm">Your added items will appear here</p>
+ </div>
+
+
+ <script src="./script.js"></script>
 </body>
 </html>
