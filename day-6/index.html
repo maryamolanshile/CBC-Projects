@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>fylo-landing-page</title>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!--<script src="https://cdn.tailwindcss.com"></script> -->
+
+ <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+  }   
+:root {
+  --primary-padding: 30px;
+  --primary-color: hsl(243, 87%, 12%)
+    }
+
+    header{  
+    display: flex;
+    justify-content: space-between;
+    padding: var(--primary-padding);
+    width: 100%;
+    }
+
+    nav{
+    display: flex;
+    gap: 25px;
+    }
+
+   .hero div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 90px;
+   }
+   .hero-div, h1{
+    color:var(--primary-color)
+   }
+   .hero{
+    display: flex;
+    padding: 30px;
+    width: 100%;
+   }
+   .hero img {
+    width: 50%;
+    flex: 1;
+    }
+   .hero, form{
+    display: flex;
+    gap: 13px;
+   }
+   .bg-curve{
+    width: 100%;
+    display: block;
+   }
+
+   section{
+    background-color: hsl(260, 85%, 98%);
+    display: flex;
+    padding: var(--primary-padding);
+    gap: 30px;
+    width: 100%;
+   }
+   .third{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+   }
+   #link{
+    display: flex;
+   }
+   article{
+    background-color: white;
+    width: 298px;
+    height: 175px;
+    padding: 20px;
+    margin-top: 5px;
+   }
+   #ceo{
+    display: flex;
+   }
+   .illustration-2{
+    width: 100%;
+    height: 85%;
+   }
+
+   .fourth{
+    color: white;
+    padding: var(--primary-padding);
+    background-color:  hsl(238, 22%, 44%);
+    display: flex;
+    font-size: small;
+    justify-content: space-between;
+    width: 100%;
+   }
+   .fourth-div{
+    width: 320px;
+   }
+   .fourth-form{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+   footer{
+    background-color: var(--primary-color);
+    padding: var(--primary-padding);
+    color: white;
+    font-size: small;
+    width: 100%;
+   }
+   .last{
+    display: flex;
+    justify-content: space-between;
+   }
+   #svg{
+    color: white 
+   }
+   @media (min-width: 320px) and (max-width: 425px){
+    :root{
+      --primary-padding: 15px;
+    }
+    nav{
+      gap: 10px;
+    }
+    .hero{
+        flex-direction: column-reverse;
+        padding: var(--primary-padding);
+        justify-content: center;
+    }
+    .hero, form{
+      flex-direction: column;
+    }
+    .hero img{  
+      width: 100%;
+    }
+    section{
+      flex-direction: column-reverse;
+    }
+   #link{
+      display: flex;
+      justify-content: center;
+    }
+    #white-card{
+      display: block;
+      justify-content: center;
+       width: auto;
+       height: auto;
+       margin: 20px;
+    }
+    .fourth{
+      flex-direction: column;
+    }
+    .fourth, h1{
+      display: flex;
+      justify-content: center;
+    }
+    .fourth-div{
+      width: auto;
+      gap: 8px;
+      margin-bottom: 13px;
+    
+    }
+    .fourth-form{
+      flex-direction: column;
+    }
+    #fourth-button{
+      width: 300px;
+    }
+    .last{
+      display: grid;
+      gap: 20px;
+    }
+  
+  }
+  
+  #hamburger, #close{
+    display: none;
+  }
+  @media (max-width: 500px){
+    #hamburger{
+      display: block
+    }
+    nav{
+      display: none;
+    }
+  }
+   
+ </style
+</head>
+
+<body>
+ <header>
+    <img  src="../images/logo.svg" style="width: 150px; height: 40px;" alt="logo" >
+    <nav>  
+        <p>Features</dp>
+        <p>Team</p>
+        <p>Sign In</p>
+    </nav>
+    <div class="menuBtn">
+        <img id="hamburger" src="../images/hamburger.svg" alt="">
+        <img id="close" src="../images/close.svg" alt="">
+    </div>
+ </header>
+
+<div class="hero">
+  <div class="hero-div">
+    <h1><strong>All your files in one secure location, accessible anywhere.</strong></h1> 
+    <p><strong>Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</strong></p>
+    <form>
+        <input type="email" id="email" name="email" placeholder="Enter your email..." style="padding: 10px">
+        <button style="background-color: blue; padding: 10px; color: white; border: 1px, solid, blue; border-radius: 3px; "><strong>Get Started</strong></button>
+    </form>    
+  </div>
+  <img class="hero img" src="../images/illustration-1.svg" alt="Illustration-1">
+</div>   
+
+
+<img src="../images/bg-curve-desktop.svg" alt="curve" class="bg-curve">
+
+<section>
+ <div class="third">
+   <h1><strong>Stay productive, wherever you are</strong></h1>
+   <p>Never let location be an issue when accessing your files. Fylo have you covered for all of your file storage needs.</p>
+   <P> Securely share files and folders with friends, family and colleagues for live collabortion. No email attachments required!</P>
+   <div id="link">
+     <a href="https://www.fylo.com" style="color: hsl(170, 45%, 43%)"; id="link"><strong>See how fylo works</strong></a>
+    <img src="/../images/icon-arrow.svg" alt="arrow">
+   </div>
+   
+   <article id="white-card">
+      <img src="../images/icon-quotes.svg" alt="quote">
+      <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+      <div id="ceo">
+        <div style="display: flex; gap: 4px;">    
+          <div>
+            <img src="../images/avatar-testimonial.jpg" alt="avatar" style="border-radius: 50%; width: 30px; height: 25px">
+          </div> 
+          <div> 
+            <p><strong>Kyle Burton</strong></p>
+            <p><small>Founder & CEO, Hurdle.</small></p>
+          </div>
+            </div>
+      </div>
+    </article>
+ </div>
+
+ <figure>
+    <img src="../images/illustration-2.svg" class="illustration-2">
+ </figure>
+</section>
+
+<div class="fourth">
+  <div class="fourth-div">
+     <h1 style="color: white">Get early access today</h1>
+     <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any question, our support team will be happy to help you.</p>
+  </div>
+  <form class="fourth-form">
+    <input type="email" placeholder="email@example.com" style="height: 30px; width: 300px; padding: 8px;">
+    <button id="fourth-button" style="color: white; height: 30px; width: 160px; border: 1px, solid, blue; border-radius: 1px; background-color: hsl(224, 93%, 58%)">Get started for free</button>
+  </form>
+</div>
+
+<footer>
+  <img src="../images/logo.svg" id="svg" alt="logo" style="color: white; width: 150px; height: 40px">
+<div class="last">
+  <div>
+  <div style="display: flex; gap: 3px;"><img src="../images/icon-phone.svg"> Phone: +1-543-123-4567</div>
+  <div style="display: flex; gap: 3px;"><img src="../images/icon-email.svg"> example@fylo.com</div>
+  </div>
+  <div>
+    <p>About Us </p>
+    <p>Jobs</p>
+    <p>Press </p>
+    <p>Blog </p>
+  </div>
+  <div>
+    <p>Contact Us</p>
+    <p>Terms</p>
+    <p>Privacy</p>
+  </div>
+  <div style="display: flex; gap: 4px">
+    <img src="../images/icon-facebook.svg" alt="facebook">
+    <img src="../images/icon-twitter.svg" alt="twitter">
+    <img src="../images/icon-instagram.svg" alt="instagram">
+  </div>
+</div>
+<script src="./script.js"></script>
+</footer>
+
+</body>
+</html>
